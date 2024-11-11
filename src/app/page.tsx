@@ -60,7 +60,7 @@ export default function Home() {
         <img
           src="images/mine2.jpg"
           alt="Profile"
-          className="rounded-full w-[400px] h-[400px] object-cover border-4 border-gray-700 animate-float z-10 relative mr-[380px]"
+          className="rounded-full w-[400px] h-[400px] object-cover border-4 border-gray-700 animate-float absolute ml-[990px]"
         />
 
         {/* Bubbles around the image */}
