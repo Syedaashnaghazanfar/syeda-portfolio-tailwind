@@ -64,7 +64,7 @@ export default function Home() {
       <img
         src="images/mine2.jpg"
         alt="Profile"
-        className=" absolute rounded w-[200px] h-[250px] lg:rounded-full lg:w-[400px] lg:h-[400px]  object-cover border-4 border-gray-700 animate-float lg:absolute lg:ml-[900px] mt-[-350px]  lg:mt-0 "
+        className=" absolute rounded w-[200px] h-[250px] lg:rounded-full lg:w-[400px] lg:h-[400px]  object-cover border-4 border-gray-700 animate-float lg:absolute lg:ml-[900px] mt-[-390px]  lg:mt-0 "
       />
 
       {/* Bubbles around the image */}
