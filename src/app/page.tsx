@@ -1,4 +1,3 @@
-
 'use client';
 
 import React from 'react';
@@ -8,83 +7,88 @@ import { faGithub, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-sv
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-cover bg-gray-800">
-      <main className="flex flex-grow items-center justify-between text-center w-full">
+    <div className="relative min-h-screen flex items-center justify-center bg-cover bg-gray-800 px-4 lg:px-0">
+      <main className="flex flex-col lg:flex-row items-center ml-0 mt-[250px] justify-center text-center w-full lg:justify-between">
         
         {/* Intro section */}
-        <div className="header-text ml-[100px] mb-[300px]">
-          <p className="intro-text text-white text-2xl">Hi, I'm</p>
-          <h1 className="name-text text-6xl font-bold text-yellow-300 animate-slide-left">Ashna Ghazanfar</h1>
-          <p className="profession-text text-3xl text-blue-300 mt-2">A Front-end Developer</p>
+        <div className="header-text mb-8 lg:ml-[80px] lg:mt-[-400px]">
+          <p className="intro-text text-white text-xl lg:text-2xl">Hi, I'm</p>
+          <h1 className="name-text text-3xl lg:text-6xl font-bold text-yellow-300 animate-slide-left">
+            Ashna Ghazanfar
+          </h1>
+          <p className="profession-text text-lg lg:text-3xl text-blue-300 mt-2">
+            A Front-end Developer
+          </p>
+          <h2 className="text-base lg:text-2xl text-white mt-4">
+            Hi, I'm Ashna, an 18-year-old girl passionate about <br />
+            web development and how I can utilize these skills in my medical career.
+          </h2>
         </div>
-        <h2 className="absolute text-5m ml-[100px] font-italic text-white mt-[220px] mb-[310px]">
-          Hi, I'm Ashna, a 17-year-old girl passionate about <br />
-          web development and how I can utilize these skills in my medical career.
-        </h2>
 
         {/* Resume button */}
-        <button className="absolute ml-[300px] mt-[40px]">
+        <div className="mt-4 lg:absolute lg:ml-[390px] lg:mt-[-80px]">
           <Link legacyBehavior href="https://syeda-static-resume.vercel.app/">
-            <a className="bg-blue-400 rounded border-white border-2 text-white p-4 hover:bg-grey-200" target="_blank">
+            <a className="bg-blue-400 rounded border-white border-2 text-white py-2 px-4 lg:p-4 hover:bg-gray-200 transition" target="_blank">
               My Resume
             </a>
           </Link>
-        </button>
+        </div>
 
         {/* Social Media Icons Section */}
-        <div className="absolute flex space-x-6 ml-[260px] mt-[190px]">
+        <div className="flex space-x-4 lg:space-x-6 mt-6 lg:absolute lg:ml-[350px] lg:mt-[60px]">
           <div className="relative group">
             <Link href="https://www.linkedin.com/in/ashna-ghazanfar-b268522b4/" target="_blank">
-              <div className="flex items-center justify-center bg-white rounded-full w-12 h-12 hover:bg-blue-500">
+              <div className="flex items-center justify-center bg-white rounded-full w-10 h-10 lg:w-12 lg:h-12 hover:bg-blue-500 transition">
                 <FontAwesomeIcon icon={faLinkedinIn} className="text-gray-800" />
               </div>
             </Link>
           </div>
           <div className="relative group">
             <Link href="https://www.instagram.com/s_ashnaali/" target="_blank">
-              <div className="flex items-center justify-center bg-white rounded-full w-12 h-12 hover:bg-pink-400">
+              <div className="flex items-center justify-center bg-white rounded-full w-10 h-10 lg:w-12 lg:h-12 hover:bg-pink-400 transition">
                 <FontAwesomeIcon icon={faInstagram} className="text-gray-800" />
               </div>
             </Link>
           </div>
           <div className="relative group">
             <Link href="https://github.com/Syedaashnaghazanfar" target="_blank">
-              <div className="flex items-center justify-center bg-white rounded-full w-12 h-12 hover:bg-orange-300">
+              <div className="flex items-center justify-center bg-white rounded-full w-10 h-10 lg:w-12 lg:h-12 hover:bg-orange-300 transition">
                 <FontAwesomeIcon icon={faGithub} className="text-gray-800" />
               </div>
             </Link>
           </div>
         </div>
-
-        {/* Profile Image */}
-        <img
-          src="images/mine2.jpg"
-          alt="Profile"
-          className="rounded-full w-[400px] h-[400px] object-cover border-4 border-gray-700 animate-float absolute ml-[990px]"
-        />
-
-        {/* Bubbles around the image */}
-        <div className="absolute ml-[900px] mt-[100px]">
-          <div className="bg-white h-[100px] w-[100px] rounded-full absolute animate-pop"></div>
-          <div className="bg-blue-400 h-[30px] w-[30px] rounded-full absolute top-[-50px] left-[-40px] animate-bubble-small"></div>
-          <div className="bg-purple-400 h-[50px] w-[50px] rounded-full absolute top-[-70px] right-[-50px] animate-bubble-medium"></div>
-          <div className="bg-pink-400 h-[40px] w-[40px] rounded-full absolute bottom-[-60px] left-[-60px] animate-bubble-small"></div>
-          <div className="bg-green-400 h-[20px] w-[20px] rounded-full absolute bottom-[-80px] right-[-70px] animate-bubble-small"></div>
-          <div className="bg-yellow-300 h-[60px] w-[60px] rounded-full absolute top-[-90px] left-[20px] animate-bubble-large"></div>
-        </div>
-        
-        <div className="absolute ml-[1410px] mb-[300px]">
-          <div className="bg-red-400 h-[100px] w-[100px] rounded-full absolute animate-pop"></div>
-          <div className="bg-blue-500 h-[30px] w-[30px] rounded-full absolute top-[-40px] left-[-30px] animate-bubble-small"></div>
-          <div className="bg-purple-500 h-[50px] w-[50px] rounded-full absolute top-[-80px] right-[-60px] animate-bubble-medium"></div>
-          <div className="bg-orange-400 h-[40px] w-[40px] rounded-full absolute bottom-[-90px] left-[-50px] animate-bubble-small"></div>
-          <div className="bg-green-300 h-[20px] w-[20px] rounded-full absolute bottom-[-50px] right-[-80px] animate-bubble-small"></div>
-          <div className="bg-teal-500 h-[60px] w-[60px] rounded-full absolute top-[-30px] left-[30px] animate-bubble-large"></div>
-        </div>
       </main>
 
-      {/* Animations */}
-      <style jsx>{`
+      {/* Profile Image */}
+      <img
+        src="images/mine2.jpg"
+        alt="Profile"
+        className=" absolute rounded w-[200px] h-[250px] lg:rounded-full lg:w-[400px] lg:h-[400px]  object-cover border-4 border-gray-700 animate-float lg:absolute lg:ml-[900px] mt-[-350px]  lg:mt-0 "
+      />
+
+      {/* Bubbles around the image */}
+      <div className="hidden lg:block lg:absolute lg:ml-[400px] lg:mt-[100px]">
+        <div className="bg-white h-[100px] w-[100px] rounded-full absolute animate-pop"></div>
+        <div className="bg-blue-400 h-[30px] w-[30px] rounded-full absolute top-[-50px] left-[-40px] animate-bubble-small"></div>
+        <div className="bg-purple-400 h-[50px] w-[50px] rounded-full absolute top-[-70px] right-[-50px] animate-bubble-medium"></div>
+        <div className="bg-pink-400 h-[40px] w-[40px] rounded-full absolute bottom-[-60px] left-[-60px] animate-bubble-small"></div>
+        <div className="bg-green-400 h-[20px] w-[20px] rounded-full absolute bottom-[-80px] right-[-70px] animate-bubble-small"></div>
+        <div className="bg-yellow-300 h-[60px] w-[60px] rounded-full absolute top-[-90px] left-[20px] animate-bubble-large"></div>
+      </div>
+
+      {/* More bubbles for right side */}
+      <div className="hidden lg:block lg:absolute lg:ml-[1300px] lg:mb-[300px]">
+        <div className="bg-red-400 h-[100px] w-[100px] rounded-full absolute animate-pop"></div>
+        <div className="bg-blue-500 h-[30px] w-[30px] rounded-full absolute top-[-40px] left-[-30px] animate-bubble-small"></div>
+        <div className="bg-purple-500 h-[50px] w-[50px] rounded-full absolute top-[-80px] right-[-60px] animate-bubble-medium"></div>
+        <div className="bg-orange-400 h-[40px] w-[40px] rounded-full absolute bottom-[-90px] left-[-50px] animate-bubble-small"></div>
+        <div className="bg-green-300 h-[20px] w-[20px] rounded-full absolute bottom-[-50px] right-[-80px] animate-bubble-small"></div>
+        <div className="bg-teal-500 h-[60px] w-[60px] rounded-full absolute top-[-30px] left-[30px] animate-bubble-large"></div>
+      </div>
+
+        {/* Animations */}
+        <style jsx>{`
         @keyframes slide-left {
           from {
             transform: translateX(-50%);
