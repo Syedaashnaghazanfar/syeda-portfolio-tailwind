@@ -28,7 +28,7 @@ export default function Home() {
         {/* Resume button */}
         <div className="mt-4 lg:absolute lg:ml-[390px] lg:mt-[-80px]">
           <Link legacyBehavior href="https://syeda-static-resume.vercel.app/">
-            <a className="bg-blue-400 rounded border-white border-2 text-white py-2 px-4 lg:p-4 hover:bg-gray-200 transition" target="_blank">
+            <a className="bg-blue-400 rounded border-white border-2 text-white py-1.5 px-2 lg:p-4 hover:bg-gray-200 transition" target="_blank">
               My Resume
             </a>
           </Link>
