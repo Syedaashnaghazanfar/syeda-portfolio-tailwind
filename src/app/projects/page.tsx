@@ -32,9 +32,9 @@ const projects = [
 export default function Projects() {
   return (
     <div className="min-h-screen bg-black flex flex-col items-center py-10 ">
-      <h1 className="text-7xl font-bold text-white mb-10 ml-10px">My Projects</h1>
+      <h1 className="lg:text-7xl text-3xl font-bold text-white mb-10 ml-10px">My Projects</h1>
       
-      <div className="w-full max-w-4xl">
+      <div className="lg:w-full lg:max-w-4xl w-[400px] ">
         {projects.map((project, index) => (
           <a
             key={index}
@@ -50,13 +50,13 @@ export default function Projects() {
                 className="w-1/3 h-48 object-cover hover:opacity-75 transition-opacity duration-300"
               />
               <div className="p-6 w-2/3">
-                <h2 className="text-2xl font-bold text-yellow-400 mb-2">{project.title}</h2>
-                <p className="text-gray-300">{project.description}</p>
+                <h2 className="lg:text-2xl font-bold text-yellow-400 mb-2">{project.title}</h2>
+                <p className="text-gray-300 ">{project.description}</p>
               </div>
             </div>
           </a>
         ))}
-       <button className='bg-yellow-300 text-black border-2 p-5 rounded ml-[400px] hover:bg-yellow-200 hover:scale-105 transition-transform duration-200'>
+       <button className='bg-yellow-300 text-black border-2 lg:p-5  p-3 rounded lg:ml-[400px] ml-[150px] hover:bg-yellow-200 hover:scale-105 transition-transform duration-200'>
          <a href="https://github.com/Syedaashnaghazanfar/" target='_blank'>More Projects</a>
       </button>
          </div>
