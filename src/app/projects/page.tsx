@@ -17,19 +17,19 @@ const projects = [
     link: 'https://github.com/Syedaashnaghazanfar/syeda_biryani',
   },
   {
-    title: 'Project 2: Resume Builder',
+    title: 'Project 3: Resume Builder',
     image: '/images/resume.png',
     description: 'Dynamic resume builder with customizable sections.',
     link: 'https://syeda-static-resume.vercel.app/index2.html',
   },
   {
-    title: 'Project 3: Contact Me',
+    title: 'Project 4: Contact Me',
     image: '/images/contact.png',
     description: 'A contact me page using html and css.',
     link: 'https://github.com/Syedaashnaghazanfar/contact-me-page',
   },
   {
-    title: 'Project 4: Wishlist Cute App',
+    title: 'Project 5: Wishlist Cute App',
     image: '/images/wishlist.png',
     description: 'A cute wishlist app with the functionality of adding and removing wishes.',
     link: 'https://cute-wishlist-application.vercel.app/',
