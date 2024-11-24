@@ -5,7 +5,7 @@ import React from 'react';
 const projects = [
  {
     title: 'Project 1: Coffee.CO',
-    image: '/images/coffee.jpg', 
+    image: '/images/coffee.png', 
     description: 'A unique coffee recipe website with animations and responsiveness using html and css and javascript.',
     link: 'https://syeda-coffee-website.vercel.app/',
   },
