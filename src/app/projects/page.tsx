@@ -3,8 +3,15 @@
 import React from 'react';
 
 const projects = [
+ {
+    title: 'Project 1: Coffee.CO',
+    image: '/images/coffee.jpg', 
+    description: 'A unique coffee recipe website with animations and responsiveness using html and css and javascript.',
+    link: 'https://syeda-coffee-website.vercel.app/',
+  },
+   
   {
-    title: 'Project 1: Biryani Website',
+    title: 'Project 2: Biryani Website',
     image: '/images/new.jpg', 
     description: 'A simple biryani recipe website with animations using html and css.',
     link: 'https://github.com/Syedaashnaghazanfar/syeda_biryani',
