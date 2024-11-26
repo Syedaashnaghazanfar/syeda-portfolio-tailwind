@@ -23,10 +23,10 @@ const projects = [
     link: 'https://syeda-static-resume.vercel.app/index2.html',
   },
   {
-    title: 'Project 4: Contact Me',
-    image: '/images/contact.png',
-    description: 'A contact me page using html and css.',
-    link: 'https://github.com/Syedaashnaghazanfar/contact-me-page',
+    title: 'Project 4: SHOP.CO',
+    image: '/images/shop.png',
+    description: 'A responsive next.js website build using figma template.',
+    link: 'https://syeda-shop-co.vercel.app/',
   },
   {
     title: 'Project 5: Wishlist Cute App',
