@@ -20,7 +20,7 @@ export default function Home() {
             A Front-end Developer
           </p>
           <h2 className="text-base lg:text-2xl text-white mt-4">
-            Hi, I'm Ashna, an 18-year-old girl passionate about <br />
+            Hi, I'm Ashna, 17-year-old girl passionate about <br />
             web development and how I can utilize these skills in my medical career.
           </h2>
         </div>
